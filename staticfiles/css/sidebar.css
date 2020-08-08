@@ -57,3 +57,22 @@
     right: 35px;
   }
 }
+/* top bar */
+.top-bar{
+    background-color: #007bff;
+}
+.top-bar-info div{
+    color: white;
+}
+/* end of top bar */
+/* navigation bar */
+/* .active .nav-link{
+    color: #eb9c01!important;
+} */
+/* end of navigation bar */
+/* banner */
+
+.banner{
+    width: 100%;
+}
+
