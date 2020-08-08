@@ -31,7 +31,7 @@
                 О Гимназии
             </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownAbout">
-              <a class="dropdown-item" href="{% url 'about' %}">Сведения об образовательной организации</a>
+              <a class="dropdown-item" href="{% url 'about' %}">Сведения об ОО</a>
               <a class="dropdown-item" href="{% url 'Team' %}">Команда</a>
               <a class="dropdown-item" href="{% url 'Gallery' %}">Галерея</a>
               <a class="dropdown-item" href="{% url 'History' %}">История гимназии</a>
@@ -39,15 +39,33 @@
               <a class="dropdown-item" href="{% url 'contact' %}">Контакты</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="About/contact.html">Контакты</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEducation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Образование
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownEducation">
+              <a class="dropdown-item" href="portfolio-1-col.html" style="text-align: center">Образовательная модель</a>
+              <a class="dropdown-item" href="portfolio-2-col.html" style="text-align: center">Образовательные стандарты</a>
+              <a class="dropdown-item" href="portfolio-3-col.html" style="text-align: center">Дополнительное образование</a>
+              <a class="dropdown-item" href="portfolio-4-col.html" style="text-align: center">Материально-техническое <br> обеспечение гимназии</a>
+              <a class="dropdown-item" href="portfolio-item.html" style="text-align: center">ЕГЭ и ГИА</a>
+            </div>
           </li>
           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmission" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Поступление
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownAdmission">
+              <a class="dropdown-item" href="portfolio-1-col.html">О поступлении</a>
+              <a class="dropdown-item" href="portfolio-2-col.html">Итоги набора</a>
+              <a class="dropdown-item" href="portfolio-3-col.html">Стипендиальный фонд школы и оплата обучения</a>
+              <a class="dropdown-item" href="portfolio-4-col.html">Ответы на вопросы</a>
+              <a class="dropdown-item" href="portfolio-item.html">Рекомендации по подготовке к поступлению</a>
+            </div>
+          </li>
+          li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
+              Информация
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
               <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
@@ -57,27 +75,10 @@
               <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Blog
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="navbarNews" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Новости
             </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-              <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-              <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Other Pages
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPages">
-              <a class="dropdown-item" href="{% url 'fullwidth' %}">Full Width Page</a>
-              <a class="dropdown-item" href="{% url 'sidebar' %}">Sidebar Page</a>
-              <a class="dropdown-item" href="{% url 'faq' %}">FAQ</a>
-              <a class="dropdown-item" href="{% url 'error' %}">404</a>
-              <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-            </div>
           </li>
         </ul>
       </div>
