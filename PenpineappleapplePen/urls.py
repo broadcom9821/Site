@@ -19,6 +19,11 @@ from . import views
 urlpatterns = [
     path('', views.index, name="index"),
     path('index.html', views.index, name="index"),
+    path('Dop_obraz.html', views.Dop_obraz, name="Dop_obraz"),
+    path('EGE_I_GIA.html', views.EGE_I_GIA, name="EGE_I_GIA"),
+    path('Mattex_obesp.html', views.Mattex_obesp, name="Mattex_obesp"),
+    path('Obr_model.html', views.Obr_model, name="Obr_model"),
+    path('Obr_stand.html', views.Obr_stand, name="Obr_stand"),
     path('contact.html', views.contact, name="contact"),
     path('Gallery.html', views.Gallery, name="Gallery"),
     path('History.html', views.History, name="History"),
