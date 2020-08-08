@@ -22,19 +22,30 @@ active
   <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
 
 </head>
+<style>
+   .nubex1 {
+    font-weight: bold;
+   }
+   .nubex2 {
+    font-weight: bolder;
+   }
+   .nubex3 {
+    font-weight: 600;
+   }
+  </style>
 <body>
 
   <!-- Page Content -->
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">О гимназии
+    <h1 class="mt-4 mb-3">Сведения об ОО
       <small></small>
     </h1>
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="../index.html">Home</a>
+        <a href="../index.html">Главная</a>
       </li>
       <li class="breadcrumb-item active">О гимназии</li>
     </ol>
@@ -45,11 +56,50 @@ active
         <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
       </div>
       <div class="col-lg-6">
-        <h2>About Modern Business</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>
+        <h2>Основные сведения</h2>
+        <p><span class="nubex1">Полное название:</span> Муниципальное бюджетное общеобразовательное учреждение муниципального образования "Город Архангельск" "Гимназия № 3 имени К.П. Гемп"</p>
+        <p><span class="nubex1">Дата создания образовательного учреждения:</span> 19 ноября 1992 г.</p>
+        <p><span class="nubex1">Адрес:</span> 163000, г. Архангельск, ул. Воскресенская, дом 7, корпус 1.</p>
+        <p><span class="nubex1">Директор гимназии:</span> Калинина Елена Николаевна: 65-73-33.</p>
+        <p><span class="nubex1">График работы:</span> <a href="#" class="text-secondary">Пн-Пт:</a> 8.00 - 17.00, <a href="#" class="text-danger">Сб</a>  8.30 - 14.00, <a href="#" class="text-danger">Вс</a> - выходной.</p>
+        <p><span class="nubex1">Приемные часы:</span> <a href="#" class="text-secondary">Пн - Пт</a>  8.00 - 16.00, <a href="#" class="text-danger">Сб</a> 8.30 - 14.00.</p>
+        <div class="p-3 mb-2 bg-dark text-white">Возможно вы искали: <a href="../contact.html" class="text-info">Контакты</a></div>
       </div>
+      <h2>Режим занятий обучающихся:</h2>
+      <table class="table">
+        <thead class="thead-inverse">
+          <tr>
+            <th></th>
+            <th>Начальная школа,<br> 1 класс</th>
+            <th>Начальная школа,<br> 2-4 классы</th>
+            <th>Основная школа,<br> 5-9 классы</th>
+            <th>Старшая школа, <br> 10-11 классы</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Продолжительность учебной недели</td>
+            <td>5 дней</td>
+            <td>6 дней</td>
+            <td>6 дней</td>
+            <td>6 дней</td>
+          </tr>
+          <tr>
+            <td>Продолжительность уроков</td>
+            <td>40 мин</td>
+            <td>40 мин</td>
+            <td>40 мин</td>
+            <td>40 мин</td>
+          </tr>
+          <tr>
+            <td>Периодичность проведения <br> промежуточной аттестации обучающихся </td>
+            <td class="align-middle">1 учебный год</td>
+            <td class="align-middle">1 учебный год</td>
+            <td class="align-middle">1 учебный год</td>
+            <td class="align-middle">1 учебный год</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <!-- /.row -->
   </div>
@@ -58,7 +108,7 @@ active
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <p class="m-0 text-center text-white">Пососная гимназия №3 &copy; Все права не защищены, вы же в России, не забывайте 2020</p>
     </div>
     <!-- /.container -->
   </footer>
