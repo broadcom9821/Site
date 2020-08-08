@@ -6496,7 +6496,7 @@ a.close.disabled {
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-left,
 .carousel-fade .carousel-item-prev.carousel-item-right {
-  z-index: 1;
+  z-index: 0;
   opacity: 1;
 }
 
@@ -6516,9 +6516,9 @@ a.close.disabled {
 
 .carousel-control-prev,
 .carousel-control-next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
   z-index: 1;
   display: -ms-flexbox;
   display: flex;
@@ -6527,6 +6527,7 @@ a.close.disabled {
   -ms-flex-pack: center;
   justify-content: center;
   width: 15%;
+
   color: #fff;
   text-align: center;
   opacity: 0.5;
@@ -10275,4 +10276,3 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
