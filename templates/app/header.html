@@ -25,11 +25,14 @@
         function openNav() {
 
     document.getElementById("myNav").style.width = "100%";
+    document.getElementById('carouselExampleIndicators').style.left = "100%";
+
 }
 /* Close when someone clicks on the "x" symbol inside the overlay */
         function closeNav() {
 
   document.getElementById("myNav").style.width = "0%";
+  document.getElementById('carouselExampleIndicators').style.left = "0";
 }</script>
     <title>{% block title %}{% endblock %}</title>
 </head>
