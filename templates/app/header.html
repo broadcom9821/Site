@@ -35,6 +35,36 @@
   document.getElementById('carouselExampleIndicators').style.left = "0";
 }</script>
     <title>{% block title %}{% endblock %}</title>
+<style>
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}</style>
 </head>
 <body>
 <!-- Navigation -->
@@ -56,7 +86,7 @@
                 </div>
             </div>
         </div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="top: 0">
     <div class="container p-0">
       <a class="navbar-brand" href="index.html">Гимназия №3</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,7 +166,7 @@
     border: none"></button>
     </div>
   </nav>
-
+</div>
 
  {% block body-content %}
     {% endblock %}
@@ -146,13 +176,142 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
   <!-- Overlay content -->
-<div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-
+<div class="overlay-content"; style="text-align: left; color: #95999c; top: 15%" >
+    <div class="divTable" >
+	<div class="divTableBody">
+		<div class="divTableRow">
+			<div class="divTableCell">
+                <a href="#"><h2 style="color: #95999c;">О гимназии</h2></a>
+				<ul>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Сведения об образовательном учреждеии</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Команда</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Галерея</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">История гимназии</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">СМИ о нас</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Контакты</h4></a>
+					</li>
+				</ul>
+			</div>
+			<div class="divTableCell">
+                <a href="#"><h2 style="color: #95999c;">Образование</h2></a>
+				<ul>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Образовательная модель</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Образовательные стандарты</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Дополнительное образование</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Материально-техническое обеспечение гимназии</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">ЕГЭ и ГИА</h4></a>
+					</li>
+				</ul>
+			</div>
+			<div class="divTableCell">
+                <a href="#"><h2 style="color: #95999c;">Поступление</h2></a>
+				<ul>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">О поступлении</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Итоги набора</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Стипендиальный фонд школы и оплата обучения</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Ответы на вопросы</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Рекоммендации по подготовке к потуплению</h4></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="divTableRow">
+			<div class="divTableCell">
+				<h2 style="color: #95999c;">О гимназии</h2>
+				<ul>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Сведения об образовательном учреждении</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Команда</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Галерея</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">История гимназии</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">СМИ о нас</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Контакты</h4></a>
+					</li>
+				</ul>
+			</div>
+			<div class="divTableCell">
+                <a href="#"><h2 style="color: #95999c;">Образование</h2></a>
+				<ul>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Образовательная модель</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Образовательные стандарты</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Дополнительное образование</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Материально-техническое обеспечение гимназии</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">ЕГЭ и ГИА</h4></a>
+					</li>
+				</ul>
+			</div>
+			<div class="divTableCell">
+                <a href="#"><h2 style="color: #95999c;">Поступление</h2></a>
+				<ul>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">О поступлении</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Итоги набора</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Стипендиальный фонд школы и оплата обучения</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Ответы на вопросы</h4></a>
+					</li>
+					<li>
+                        <a href="#"><h4 style="color: #95999c;">Рекоммендации по подготовке к потуплению</h4></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
 </div>
 </body>
 </html>
