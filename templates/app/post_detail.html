@@ -1,10 +1,10 @@
 
-
+{% extends 'app/header.html' %} {% block body-content %}
 {% load crispy_forms_tags %}
 
-<div class="container">
+<div class="container" >
   <div class="row">
-    <div class="col-md-8 card mb-4  mt-3 left  top">
+    <div class="col-md-8 card mb-4  mt-3 left " style="top: 30px">
       <div class="card-body">
         <h1>{% block title %} {{ post.title }} {% endblock title %}</h1>
         <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
@@ -55,3 +55,4 @@
   </div>
 </div>
 
+{% endblock %}
