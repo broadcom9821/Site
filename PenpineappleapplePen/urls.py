@@ -13,12 +13,18 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path
 from . import views
+from .views import PostList
+from django.urls import include
+from django.urls import path
+from .feeds import LatestPostsFeed, AtomSiteNewsFeed
+
 urlpatterns = [
-    path('', views.index, name="index"),
-    path('index.html', views.index, name="index"),
+    path("feed/rss", LatestPostsFeed(), name="post_feed"),
+    path("feed/atom", AtomSiteNewsFeed()),
+    path('', PostList.as_view(), name="index"),
+    path('index.html', PostList.as_view(), name="index"),
+    path("<slug:slug>/", views.post_detail, name="post_detail"),
     path('Dop_obraz.html', views.Dop_obraz, name="Dop_obraz"),
     path('EGE_I_GIA.html', views.EGE_I_GIA, name="EGE_I_GIA"),
     path('Mattex_obesp.html', views.Mattex_obesp, name="Mattex_obesp"),
@@ -35,5 +41,9 @@ urlpatterns = [
     path('404.html', views.error, name="error"),
     path('about.html', views.about, name="about"),
     path('services.html', views.services, name="services"),
-]
+    path('About_adm.html', views.About_adm, name="About_adm"),
+    path('Recomendation_adm.html', views.Recomendation_adm, name="Recomendation_adm"),
+    path('Results_adm.html', views.Results_adm, name="Results_adm"),
+    path('Stipendia_adm.html', views.Stipendia_adm, name="Stipendia_adm"),
 
+]
